@@ -1,5 +1,5 @@
-html {
-	background-image: url("coffee pic.jpeg");
+#page1 html {
+	background-image: url("coffee2.jpeg") alt("Coffee Picture");
  	background-position: center;
   background-size: cover;
 	background-repeat: no-repeat;
@@ -7,26 +7,21 @@ html {
 
 }
 
-
-
-
-
-.items{
+#page1 .items{
 	color:#383838;
 	position: relative;
 	top:20px;
 	padding-right: 10px;
 
-
 }
 
-.title{
+#page1 .title{
 	font-family: sans-serif;
 	font-size: 60px;
 	color: white;
 
 }
-.Top{
+#page1 .Top{
 	background-image: url("coffee2.jpeg");
 	background-position: center;
 	background-size: cover;
@@ -34,7 +29,7 @@ html {
 	height:100%;
 }
 
-#page-title {
+#page1 .title {
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
@@ -42,9 +37,124 @@ html {
     color: #000000;
     text-shadow: 2px 2px 2px gray;
 
+}
+#page2 .items{
+	color:#383838;
+	position: relative;
+	top:20px;
+	padding-right: 10px;
 
+}
+#page3 .items{
+	color:#383838;
+	position: relative;
+	top:20px;
+	padding-right: 10px;
+}
+#page3 .Top{
+  background-image: url("unnamed.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+  color: #006400;
+}
+#page3 .dropbtn {
+  background-color: #8FBC8F;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#page3 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#page3 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#page3 .dropdown-content a:hover {background-color: #ddd;}
+
+#page3 .dropdown:hover .dropdown-content {display: block;}
+
+#page3 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#page4 .items{
+	color:#383838;
+	position: relative;
+	top:20px;
+	padding-right: 10px;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
 }
 
 
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
 
-/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
